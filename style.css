@@ -1,0 +1,152 @@
+* {
+    font-family: 'Noto Sans Arabic', sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-weight: 500;
+    list-style: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.114);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(6, 6, 6, 0.125);
+    background-color: white;
+    height: 60px;
+}
+
+/* .main {
+    height: calc(100vh - 120px);
+   
+}  */
+
+.right {
+    border-left: 5px double rgba(0, 0, 0, 0.354);
+}
+
+.search-form {
+
+    position: relative;
+}
+.word{
+    position: relative;
+}
+.search-resault{
+    
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    left: 0;
+    padding: 10px 10px 0 10px;
+    background-color: white;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.224);
+    border-radius: 10px;
+    display: none;
+}
+.search-resault.active{
+    display: block;
+}
+.search-form input {
+    height: 45px;
+
+}
+
+.search-form button {
+    position: absolute;
+    left: 3px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 35px;
+    height: 90%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    background-color: white;
+
+}
+
+.pub {
+    height: 120px;
+    
+}
+
+.table tr,
+td {
+    background-color: transparent !important;
+
+
+}
+
+
+
+.pub.active , .randTable.active {
+    visibility: hidden;
+}
+
+
+
+
+
+.insert-form textarea {
+    height: 160px;
+    resize: none;
+}
+
+
+.insert-form input,
+select {
+    height: 45px;
+}
+
+
+.miloud {
+    position: fixed;
+    left: 10px;
+    bottom: 0;
+}
+
+
+@media screen and (max-width:992px){
+    /* body{
+        background-color: black;
+    }
+     */
+     .right{
+        border: none;
+     }
+     .miloud{
+        visibility: hidden;
+     }
+     .logo{
+        display: none;
+     }
+
+   
+}
+::-webkit-scrollbar{
+    width: 7px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.153);
+    border-radius: 3px;
+}
+.post {
+    -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.09);
+    -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.09);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.09);
+}
+
