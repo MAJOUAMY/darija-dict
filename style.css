@@ -51,9 +51,7 @@ header {
     border-radius: 10px;
     display: none;
 }
-.search-resault.active{
-    display: block;
-}
+
 .search-form input {
     height: 45px;
 

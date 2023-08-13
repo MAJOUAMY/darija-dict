@@ -14,12 +14,12 @@ if(isset($word)){
     
     $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-  
+
     $output = '<ul class="list-unstyled">';  
     
     if(count($result) > 0){  
         foreach($result as $row){  
-            // $output .= '<li>'.$row["word"].'</li>';  
+            
             $output .= "<li class='py-2 border-1  border-bottom border-secondary'><a href='def.php?word={$row["word"]} ' target='_top' >{$row["word"]}</a></li>";  
         }  
     }else{  
